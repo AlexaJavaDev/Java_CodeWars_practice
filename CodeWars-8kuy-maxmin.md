@@ -18,7 +18,9 @@ highAndLow("1 9 3 4 -5") // return "9 -5"
 ## Моё решение
 
 public class Kata {
+
   public static String highAndLow(String numbers) {
+  
     String[] str = numbers.split(" ");
     
     int max = Integer.parseInt(str[0]);
