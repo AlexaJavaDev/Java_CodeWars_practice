@@ -1,4 +1,4 @@
-# Find the smallest integer in the array
+# Find the smallest and biggest integer in the array
 
 **Уровень:** 8 kyu
 
