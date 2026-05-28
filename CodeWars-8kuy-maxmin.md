@@ -16,10 +16,8 @@ highAndLow("1 9 3 4 -5") // return "9 -5"
 Выходная строка должна состоять из двух чисел, разделенных одним пробелом, причем наибольшее число должно быть первым.
 
 ## Моё решение
-
-public class Kata {
-
-  public static String highAndLow(String numbers) {
+```java
+public static String highAndLow(String numbers) {
   
     String[] str = numbers.split(" ");
     
@@ -37,4 +35,4 @@ public class Kata {
     }
     return max + " " + min;
   }
-}
+```
