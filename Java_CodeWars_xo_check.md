@@ -4,19 +4,19 @@
 
 ## Условие
 
-Проверьте, совпадает ли количество символов «x» и «o» в строке. Метод должен возвращать логическое значение и быть нечувствительным к регистру. Строка может содержать любые символы.
+Проверьте, совпадает ли количество символов «x» и «o» в строке.  
+Метод должен возвращать логическое значение и быть нечувствительным к регистру.  
+Строка может содержать любые символы.  
 Примеры ввода/вывода:
 
-XO("ooxx") => true
-XO("xooxx") => false
-XO("ooxXm") => true
-XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
-XO("zzoo") => false
+XO("ooxx") => true  
+XO("xooxx") => false  
+XO("ooxXm") => true  
+XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true  
+XO("zzoo") => false  
 
 ## Моё решение
-
-public class XO {
-  
+```java
   public static boolean getXO (String str) {
 
     String s = str.toLowerCase();
@@ -33,26 +33,23 @@ public class XO {
   }
     return countX == countO;
  }
-}
+```
 
 ## Решения других пользователей
-
-public class XO {
-  
-  public static boolean getXO (String str) {
+```java
+public static boolean getXO (String str) {
 
     str = str.toLowerCase();
     return str.replace("o","").length() == str.replace("x","").length();
   }
-}
-
-public class XO {
-  
-  public static boolean getXO (String str) {
+```
+или
+```java
+public static boolean getXO (String str) {
 
     String xValues = str.replaceAll("[^xX]", "");
     String oValues = str.replaceAll("[^oO]", "");
     
     return xValues.length() == oValues.length();
   }
-}
+```
