@@ -9,11 +9,11 @@
 Строка может содержать любые символы.  
 Примеры ввода/вывода:
 
-XO("ooxx") => true  
-XO("xooxx") => false  
-XO("ooxXm") => true  
-XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true  
-XO("zzoo") => false  
+XO("xoxoxo") => true - равное количество Х и О  
+XO("xooxx") => false - неравное количество Х и О  
+XO("ooxXm") => true - равное  
+XO("zpzpzpp") => true - если нету ни Х ни О тоже возвращает true  
+XO("zzoo") => false - не равное  
 
 ## Моё решение
 ```java
